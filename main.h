@@ -8,6 +8,8 @@
 
 int _printf(const char *format, ...);
 _putchar(char c);
+int _strlen(char *s);
+void _puts(char *str);
 
 
 #endif
