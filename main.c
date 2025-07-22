@@ -1,3 +1,5 @@
+#include <limits.h>
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -5,10 +7,8 @@
  *
  * Return: Always 0
  */
-
 int main(void)
 {
-
     int len;
     int len2;
     unsigned int ui;
@@ -42,15 +42,3 @@ int main(void)
     printf("Unknown:[%r]\n");
     return (0);
 }
-/*
-int main(void)
-{
-    _printf("Hello, World!\n");
-    _printf("This is a test of the custom printf function.\n");
-    _printf("Character: %c\n", 'A');
-    _printf("String: %s\n", "Custom printf works!");
-    return (0);
-}
-    */
-
-
