@@ -20,13 +20,7 @@ int _printf(const char *format, ...)
 
 	while (format[i] != '\0') /*detection du texte*/
 	{
-		if (format[i] != '%')
-		{
-			_putchar (format[i]);
-			count++;
-			i++;
-		}
-		
+
 			if (format[i] == '%' && format[i + 1] == '%')/*cas du %*/
 			{
 				_putchar('%');
@@ -49,6 +43,12 @@ int _printf(const char *format, ...)
 				count++;
 				i += 2;
 
+			}
+			else
+			{
+			_putchar (format[i]);
+			count++;
+			i++;
 			}
 	}
 	
