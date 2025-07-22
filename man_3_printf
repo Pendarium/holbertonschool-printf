@@ -1,0 +1,34 @@
+printf(3) — Linux manual page
+
+NAME
+
+	_printf
+
+LIBRARY
+
+	Standard C library (libc, -lc)
+
+SYNOPSIS
+
+
+DESCRIPTION
+
+
+Format of the format string
+
+
+Length modifier
+       Here, "integer conversion" stands for d, i, o, u, x, or X
+       conversion.
+
+Conversion specifiers
+       A character that specifies the type of conversion to be applied.
+       The conversion specifiers and their meanings are:
+
+	   c      If no l modifier is present, the int argument is converted
+              to an unsigned char, and the resulting character is
+              written.  If an l modifier is present, the wint_t (wide
+              character) argument is converted to a multibyte sequence by
+              a call to the wcrtomb(3) function, with a conversion state
+              starting in the initial state, and the resulting multibyte
+              string is written.
