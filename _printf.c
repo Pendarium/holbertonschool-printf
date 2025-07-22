@@ -20,7 +20,7 @@ int _printf(const char *format, ...)
 
 	while (format[i] != '\n') /*detection du texte*/
 	{
-			_putchar (format[i]);
+			_putchar (format[i - 1]);
 			count++;
 			i++;
 		
@@ -49,7 +49,9 @@ int _printf(const char *format, ...)
 			}
 	}
 	_putchar('\n');
+
 va_end(args);
 
 return(0);
 }
+
