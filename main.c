@@ -5,6 +5,7 @@
  *
  * Return: Always 0
  */
+
 int main(void)
 {
     int len;
@@ -38,5 +39,17 @@ int main(void)
     printf("Len:[%d]\n", len2);
     _printf("Unknown:[%r]\n");
     printf("Unknown:[%r]\n");
+        return (0);
+}
+/*
+int main(void)
+{
+    _printf("Hello, World!\n");
+    _printf("This is a test of the custom printf function.\n");
+    _printf("Character: %c\n", 'A');
+    _printf("String: %s\n", "Custom printf works!");
     return (0);
 }
+    */
+
+
