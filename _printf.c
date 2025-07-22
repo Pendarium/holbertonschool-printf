@@ -10,6 +10,7 @@ int _printf(const char *format, ...)
 
 	while (format[i] != '\0')
 	{
+	compteur++;
 		if (format[i] == '%' && format[i + 1] == '%')			
 		{
 			_putchar('%');
