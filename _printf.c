@@ -8,9 +8,11 @@ int _printf(const char *format, ...)
 	va_list args;
 	va_start (args, format);
 
-	while (format[i] != '\0')
+	while (format[i] != '\0' && format[i] != '%')
 	{
-	compteur++;
+		_putchar (format[i]);
+		compteur++;
+		i++;
 		if (format[i] == '%' && format[i + 1] == '%')			
 		{
 			_putchar('%');
@@ -34,14 +36,9 @@ int _printf(const char *format, ...)
 			i += 2;
 			continue;
 		}
-		else
-		{
-			_putchar (format[i]);
-			compteur++;
-			i++;
-		}
+
 }
 va_end(args);
-	
+
 return(0);
 }
