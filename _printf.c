@@ -18,11 +18,14 @@ int _printf(const char *format, ...)
 	va_list args;
 	va_start (args, format);
 
-	while (format[i] != '\n') /*detection du texte*/
+	while (format[i] != '\0') /*detection du texte*/
 	{
-			_putchar (format[i - 1]);
+		if (format[i] != '%')
+		{
+			_putchar (format[i]);
 			count++;
 			i++;
+		}
 		
 			if (format[i] == '%' && format[i + 1] == '%')/*cas du %*/
 			{
@@ -48,7 +51,7 @@ int _printf(const char *format, ...)
 
 			}
 	}
-	_putchar('\n');
+	
 
 va_end(args);
 
