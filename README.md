@@ -4,12 +4,14 @@
 
 Personal rewrite of the `printf` function in C language, as part of the Holberton School curriculum.
 
-## Description
+## 📘 Description
 
-% 	Output a literal % character; does not accept flags, width, precision or length fields\
-c 	char\
-s 	null-terminated string\
-d, i 	(signed) int formatted as decimal; %d and %i are synonymous except when used with scanf\
+This project is a custom implementation of the printf function in C, developed as part of the Holberton curriculum.\
+It supports multiple format specifiersand prints the formatted string to standard output, returning the number of characters printed.
+- % 	Output a literal % character; does not accept flags, width, precision or length fields
+- c 	char 
+- s 	null-terminated string
+ - d, i 	(signed) int formatted as decimal; %d and %i are synonymous except when used with scanf
 
 ## Commande de compilation
 
