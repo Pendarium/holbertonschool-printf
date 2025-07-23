@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdarg.h>
-#include <unistd.h>
 
 /**
  * _printf - Custom printf function
@@ -9,13 +7,14 @@
  * Return: The number of characters printed
  */
 
-int _printf(const char *format, ...)
+int _printf_t1(const char *format, ...)
 {
 	int i = 0, count = 0;
 	va_list args;
 
 	va_start(args, format);
-
+	while (format[i] != '\0')
+	{
 	if (format == NULL) /* Vérifie si la chaîne est NULL */
 	{
 		return (-1);
@@ -43,6 +42,7 @@ int _printf(const char *format, ...)
 			count++;  /* Comptabilise le caractère normal */
 			i++;  /* Avance d'un caractère */
 		}
+	}
 	}
 	va_end(args);
 	return (count); /* Retourne le nombre total de caractères imprimés */

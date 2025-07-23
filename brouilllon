@@ -1,0 +1,28 @@
+#include "main.h"
+
+/**
+ * _printf - Custom printf function
+ * @format: The format string
+ * 2 cases: %d, %i
+ * Return: The number of characters printed
+ */
+
+int _printf_t1(const char *format, ...)
+{
+	int i = 0, count = 0;
+	va_list args;
+
+	va_start(args, format);
+	while (format[i] != '\0')
+	{
+		if (format[i] == '%')
+		{
+			if (format[i + 1] == 'd' || format[i + 1] == 'i')
+			{
+				/* Cas du d ou i - Entier décimal signé */
+				count += print_number(va_arg(args, int));
+				i += 2;  /* Avance après % et d/i */
+			}
+
+	va_end(args);
+	return (count); }

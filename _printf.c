@@ -42,6 +42,12 @@ int _printf(const char *format, ...)
 					count++;
 					j++; }
 				i += 2; }
+			else if (format[i + 1] == 'd' || format[i + 1] == 'i')
+			{
+				/* Cas du d ou i - Entier décimal signé */
+				count += print_number(va_arg(args, int));
+				i += 2;  /* Avance après % et d/i */
+			}
 			else if (format[i + 1] == '\0')
 			{return (-1); }
 			else
