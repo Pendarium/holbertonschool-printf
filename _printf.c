@@ -11,53 +11,63 @@
 
 int _printf(const char *format, ...)
 {
+    int i = 0, count = 0;
+    va_list args;
 
-	int i = 0;
-	int count = 0;
+    va_start(args, format);
 
-	va_list args;
+    while (format[i] != '\0')
+    {
+        if (format[i] == '%' && format[i + 1] != '\0')
+        {
+            if (format[i + 1] == '%')
+            {
+                _putchar('%');
+                count++;
+                i += 2;
+            }
+            else if (format[i + 1] == 'c')
+            {
+                char ch = va_arg(args, int);
+                _putchar(ch);
+                count++;
+                i += 2;
+            }
+            else if (format[i + 1] == 's')
+            {
+                char *str = va_arg(args, char *);
+                int j = 0;
 
-	va_start (args, format);
+                if (str == NULL)
+                    str = "(null)";
 
-	while (format[i] != '\0' && format[i] != '%') /*detection du texte*/
-	{
-			_putchar (format[i]);
-			count++;
-			i++;
-			
-			if (format[i] == '%' && format[i + 1] == '%')/*cas du %*/
-			{
-				_putchar('%');
-				count++;
-				i += 2;
+                while (str[j])
+                {
+                    _putchar(str[j]);
+                    count++;
+                    j++;
+                }
+                i += 2;
+            }
+            else
+            {
 
+                _putchar(format[i]);
+                _putchar(format[i + 1]);
+                count += 2;
+                i += 2;
+            }
+        }
+        else
+        {
+            _putchar(format[i]);
+            count++;
+            i++;
+        }
+    }
 
-			}
-			else if (format[i] == '%' && format[i + 1] == 'c')/*cas du int*/
-			{
-				char result = va_arg(args, int);
+    va_end(args);
 
-				_putchar(result);
-				count++;
-				i += 2;
-
-
-			}
-			else if (format[i] == '%' && format[i + 1] == 's')/*cas du str*/
-			{
-				char *result = va_arg(args, char*);
-
-				_puts(result);
-				count++;
-				i += 2;
-				
-			}
-
-	}
-	
-
-va_end(args);
-
-return(i);
+    return count;
 }
 
