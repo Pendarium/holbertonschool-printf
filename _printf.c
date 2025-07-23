@@ -31,12 +31,7 @@ while (format[i] != '\0')
 			
 				break;
 			}
-			else
-			{
-			
-				i += 2;
-			}
-            if (format[i + 1] == 'c')
+            else if (format[i + 1] == 'c')
             {
                 char ch = va_arg(args, int);
                 _putchar(ch);
