@@ -24,31 +24,33 @@ int _printf(const char *format, ...)
 		if (format[i] == '%')
 		{
 			if (format[i + 1] == '%')
-			{_putchar('%');
+				{_putchar('%');
 				count++;
 				i += 2; }
 			else if (format[i + 1] == 'c')
-			{char ch = va_arg(args, int);
+				{char ch = va_arg(args, int);
 				_putchar(ch);
 				count++;
 				i += 2; }
 			else if (format[i + 1] == 's')
-			{char *str = va_arg(args, char *);
+				{char *str = va_arg(args, char *);
 				j = 0;
 				if (str == NULL)
 					str = "(null)";
 				while (str[j])
-				{_putchar(str[j]);
+					{_putchar(str[j]);
 					count++;
 					j++; }
 				i += 2; }
+			else if (format[i + 1] == '\0')
+			{return (-1); }
 			else
-			{_putchar(format[i]);
+				{_putchar(format[i]);
 				_putchar(format[i + 1]);
 				count += 2;
 				i += 2; } }
 		else
-		{_putchar(format[i]);
+			{_putchar(format[i]);
 			count++;
 			i++; } }
 	va_end(args);
