@@ -16,17 +16,27 @@ int _printf(const char *format, ...)
 
     va_start(args, format);
 
-    while (format[i] != '\0')
-    {
-        if (format[i] == '%' && format[i + 1] != '\0')
-        {
-            if (format[i + 1] == '%')
-            {
-                _putchar('%');
-                count++;
-                i += 2;
-            }
-            else if (format[i + 1] == 'c')
+while (format[i] != '\0')
+	{
+		if (format[i] == '%')
+		{
+			if (format[i + 1] == '%')
+			{
+				_putchar('%');
+				count++;
+				i += 2;
+			}
+			else if (format[i + 1] == '\0')
+			{
+			
+				break;
+			}
+			else
+			{
+			
+				i += 2;
+			}
+            if (format[i + 1] == 'c')
             {
                 char ch = va_arg(args, int);
                 _putchar(ch);
