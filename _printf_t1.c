@@ -27,14 +27,13 @@ int _printf(const char *format, ...)
 			if (format[i + 1] == 'd' || format[i + 1] == 'i')
 			{
 				/* Cas du d ou i - Entier décimal signé */
-				count += print_numbers(va_arg(args, int));
+				count += print_number(va_arg(args, int));
 				i += 2;  /* Avance après % et d/i */
-				return (i);
 			}
 			else
 			{
 				_putchar(format[i]); /* Affiche % si n'est pas suivi d'un format valide */
-				count++;  /* Comptabilise le % */
+				count++;  
 				i++;  /* Avance d'un caractère */
 			}
 		}
@@ -46,5 +45,5 @@ int _printf(const char *format, ...)
 		}
 	}
 	va_end(args);
-	return (count); /* Retourne le nombre total de caractères imprimés */
+	return (1); /* Retourne le nombre total de caractères imprimés */
 }

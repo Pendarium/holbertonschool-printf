@@ -1,21 +1,41 @@
 #include "main.h"
 
 /**
-* print_numbers - entry point
+* print_number - integer to be printed
+* @n: the numbers
 *
-*Écrivez une fonction qui affiche les nombres de 0 à 9,
-*suivis d'un saut de ligne.
-*
-*Prototype : void print_numbers(void);
-*Vous ne pouvez utiliser _putchar que deux fois dans votre code.
-*
-* Return: void
+* Return: The number printed
 */
-
-void print_numbers(void)
+int print_number(int n)
 {
-char num;
-for (num = '0' ; num <= '9' ; num++)
-_putchar(num);
-_putchar('\n');
+	unsigned int num;
+	int count = 0;
+
+	if (n == 0)
+	{
+		_putchar('0');
+		return (1);
+	}
+
+	if (n < 0)
+	{
+		_putchar ('-');
+		count++;
+		num = -n;
+	}
+
+	else
+	{
+	num = n;
+	}
+
+	if (num / 10)
+	{
+		count += print_number(num / 10);
+	}
+
+_putchar((num % 10) + '0');
+count++;
+
+return (count);
 }
