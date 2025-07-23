@@ -1,15 +1,16 @@
 #include "main.h"
 
 /**
- * _printf - Imprime une chaîne formatée sur la sortie standard
- * @format: chaîne de format contenant les spécificateurs
+ * _printf - Fonction qui imprime une chaîne formatée, similaire à printf.
+ * @format: Chaîne constante contenant le texte à imprimer ainsi que des
+ *          spécificateurs de format (comme %c, %s, %%).
  *
- * Cette fonction prend en charge les spécificateurs suivants :
- * %c : imprime un caractère
- * %s : imprime une chaîne de caractères
- * %% : imprime le caractère '%'
+ * Description: Cette fonction parcourt la chaîne de format fournie,
+ * imprime les caractères ordinaires directement, et interprète les
+ * spécificateurs de format pour afficher les arguments passés.
+ * Elle gère les formats %c (caractère), %s (chaîne) et %% (pourcentage).
  *
- * Retour: le nombre total de caractères imprimés
+ * Return: Le nombre total de caractères imprimés (hors caractère nul).
  */
 
 int _printf(const char *format, ...)
