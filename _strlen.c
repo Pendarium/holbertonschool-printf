@@ -10,15 +10,16 @@
 
 int _strlen(char *s)
 {
-    int length = 0;
 
-    /* Si la chaîne est NULL, retourne 0 */
-    if (s == NULL)
-        return (0);
+int length = 0;
 
-    /* Compte les caractères jusqu'au caractère nul */
-    while (s[length] != '\0')
-        length++;
+/* Si la chaîne est NULL, retourne 0 */
+if (s == NULL)
+return (0);
 
-    return (length);
+/* Compte les caractères jusqu'au caractère nul */
+while (s[length] != '\0')
+length++;
+
+return (length);
 }
