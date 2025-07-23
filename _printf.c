@@ -60,4 +60,3 @@ va_end(args);
 
 return(i);
 }
-
