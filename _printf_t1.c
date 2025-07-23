@@ -8,7 +8,7 @@
  * 2 cases: %d, %i
  * Return: The number of characters printed
  */
- 
+
 int _printf(const char *format, ...)
 {
 	int i = 0, count = 0;
@@ -33,13 +33,13 @@ int _printf(const char *format, ...)
 			}
 			else
 			{
-				_putchar(format[i]); /* Affiche % si ce n'est pas suivi d'un format valide */
+				_putchar(format[i]); /* Affiche % si n'est pas suivi d'un format valide */
 				count++;  /* Comptabilise le % */
 				i++;  /* Avance d'un caractère */
 			}
 		}
 		else
-		{	
+		{
 			_putchar(format[i]);/* Affiche un caractère normal */
 			count++;  /* Comptabilise le caractère normal */
 			i++;  /* Avance d'un caractère */
