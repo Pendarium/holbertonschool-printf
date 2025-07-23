@@ -1,13 +1,6 @@
 #include "main.h"
 
-/**
- * _printf - Custom printf function
- * @format: The format string
- *
- * 3 cases : %%, %c, %s
- * 
- * Return: The number of characters printed
- */
+
 
 int _printf(const char *format, ...)
 {
@@ -43,7 +36,7 @@ while (format[i] != '\0')
                     str = "(null)";
 
                 while (str[j])
-				
+
                 {
                     _putchar(str[j]);
                     count++;
