@@ -26,11 +26,7 @@ while (format[i] != '\0')
 				count++;
 				i += 2;
 			}
-			else if (format[i + 1] == '\0')
-			{
-			
-				break;
-			}
+
             else if (format[i + 1] == 'c')
             {
                 char ch = va_arg(args, int);
@@ -47,11 +43,16 @@ while (format[i] != '\0')
                     str = "(null)";
 
                 while (str[j])
+				if (str[j] != '\0')
                 {
                     _putchar(str[j]);
                     count++;
                     j++;
                 }
+				else
+				{
+					break;
+				}
                 i += 2;
             }
             else
