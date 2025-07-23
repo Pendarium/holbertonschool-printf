@@ -43,16 +43,12 @@ while (format[i] != '\0')
                     str = "(null)";
 
                 while (str[j])
-				if (str[j] != '\0')
+				
                 {
                     _putchar(str[j]);
                     count++;
                     j++;
                 }
-				else
-				{
-					break;
-				}
                 i += 2;
             }
             else
