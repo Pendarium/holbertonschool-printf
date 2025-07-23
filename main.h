@@ -11,8 +11,7 @@
 int _printf(const char *format, ...);
 int _putchar(char c);
 int _strlen(char *s);
-void _puts(char *str);
-void print_numbers(void);
+int print_number(int n);
 
 
 #endif
