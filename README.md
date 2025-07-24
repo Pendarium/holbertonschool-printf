@@ -20,8 +20,7 @@ It supports multiple format specifiersand prints the formatted string to standar
 
 ## 🧭 Index
 
-- [📝 Description](#-description)
-- [🚀 Fonctionnalités](#-fonctionnalités)
+1 - [⚙️ Cloning and Compilation](#-⚙️ Cloning and Compilation)
 - [⚙️ Compilation](#️-compilation)
 - [📚 Utilisation](#-utilisation)
 - [📄 Man Page](#-man-page)
@@ -32,7 +31,7 @@ It supports multiple format specifiersand prints the formatted string to standar
 - [📜 Licence](#-licence)
 
 
-## ⚙️ Cloning and Compilation
+## ⚙️ Cloning and Compilation <a id=Cloning and Compilation>
 
 | cloning |CMD|
 |-----------------------|-------------------------------------------------------|
