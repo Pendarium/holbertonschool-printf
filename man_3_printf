@@ -1,34 +1,57 @@
-printf(3) — Linux manual page
+.TH _PRINTF 3 "21/07/2025 -> 25/07/2025" "version 1.0"
+.SH NAME
+_printf \- custom implementation of printf to print formatted output to standard output
 
-NAME
+.SH SYNOPSIS
+.B #include "main.h"
+.br
+.B int _printf(const char *format, ...);
 
-	_printf
+.SH DESCRIPTION
+The
+.B _printf()
+function produces output according to a format string and additional arguments, similar to the standard
+.B printf(3)
+function.
 
-LIBRARY
+It supports the following format specifiers:
 
-	Standard C library (libc, -lc)
+.TP
+.B %c
+Prints a single character.
 
-SYNOPSIS
+.TP
+.B %s
+Prints a null-terminated string of characters.
 
+.TP
+.B %%
+Prints a literal percent sign.
 
-DESCRIPTION
+.TP
+.B %d
+Prints a signed decimal integer.
 
+.TP
+.B %i
+Same as %d; prints a signed decimal integer.
 
-Format of the format string
+.TP
+.B %o
+Know to print other % but print just %o.
 
+.SH RETURN VALUE
+Returns the total number of characters printed.
+Returns \-1 on error.
 
-Length modifier
-       Here, "integer conversion" stands for d, i, o, u, x, or X
-       conversion.
+.SH EXAMPLES
+.nf
+_printf("Char: %c\\n", 'A');
+_printf("String: %s\\n", "Hello");
+_printf("Integer: %d\\n", 42);
+_printf("Percent: %%\\n");
+_printf("other format: %o\\n);
+.fi
 
-Conversion specifiers
-       A character that specifies the type of conversion to be applied.
-       The conversion specifiers and their meanings are:
-
-	   c      If no l modifier is present, the int argument is converted
-              to an unsigned char, and the resulting character is
-              written.  If an l modifier is present, the wint_t (wide
-              character) argument is converted to a multibyte sequence by
-              a call to the wcrtomb(3) function, with a conversion state
-              starting in the initial state, and the resulting multibyte
-              string is written.
+.SH AUTHOR
+Written by [Sorli Thomas an Cecile Laroche]
