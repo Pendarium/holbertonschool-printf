@@ -18,6 +18,20 @@ It supports multiple format specifiersand prints the formatted string to standar
 | `%i`      | Same as `%d`, prints an integer          |
 | `%%`      | Prints a literal percent sign `%`        |
 
+## 🧭 Index
+
+- [📝 Description](#-description)
+- [🚀 Fonctionnalités](#-fonctionnalités)
+- [⚙️ Compilation](#️-compilation)
+- [📚 Utilisation](#-utilisation)
+- [📄 Man Page](#-man-page)
+- [🔁 Flowchart](#-flowchart)
+- [📁 Structure du projet](#-structure-du-projet)
+- [✅ Tests](#-tests)
+- [👥 Auteurs](#-auteurs)
+- [📜 Licence](#-licence)
+
+
 ## ⚙️ Cloning and Compilation
 
 | cloning |CMD|
@@ -47,10 +61,7 @@ It supports multiple format specifiersand prints the formatted string to standar
 | `_print_numbers.c` | Contains the fonction to print numbers |
 
 
-## 📋 Requirements
-
-
-## Man page
+## 📋 Man page
 
 A custom manual is provided in the file `man_3_printf`. It describes the usage, arguments, and return value of the `_printf` function.
 
@@ -83,8 +94,8 @@ To view the manual in your terminal:
 ## ✍ Authors
 This project was collaboratively developed by Holberton students as a peer programming exercise.\
 \
-Thomas SORLI https://github.com/Pendarium \
-Cécile LAROCHE https://github.com/CecileLAROCHE
+**Thomas SORLI** https://github.com/Pendarium \
+**Cécile LAROCHE** https://github.com/CecileLAROCHE
 
 ## 📜 License
 
