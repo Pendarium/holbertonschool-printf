@@ -24,7 +24,7 @@ It supports multiple format specifiersand prints the formatted string to standar
 2 - [📚 Files in Repository](#-files)\
 3 - [📄 Man Page](#-man-page)\
 4 - [ 🗺️ Flowchart](#-flowchart)\
-5 - [✅ Tests](#-tests)\
+5 - [🧪 Tests](#-tests)\
 6 - [📁 Project Structure](#-structure-du-projet)\
 7 - [👥 Authors](#-authors)\
 8 - [📜 Licence](#-licence)
@@ -89,12 +89,12 @@ To view the manual in your terminal:
 
 
 
-## 👥 Authors <a id="authors"></a>
+## 👥 Authors <a id="-authors"></a>
 This project was collaboratively developed by Holberton students as a peer programming exercise.\
 \
 **Thomas SORLI** https://github.com/Pendarium \
 **Cécile LAROCHE** https://github.com/CecileLAROCHE
 
-## 📜 License <a id="licence"></a>
+## 📜 License <a id="-licence"></a>
 
 This project is for educational purposes only as part of Holberton School.
