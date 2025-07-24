@@ -1,4 +1,4 @@
-# README of project Printf for Holberton's school
+# README of project Printf for Holberton's School
 
 ![Project Status](https://img.shields.io/badge/status-development-yellow)
 ![License: Edu](https://img.shields.io/badge/license-Educational-lightgrey)
@@ -8,14 +8,14 @@
   <img alt="printfC" width="250" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWc3bmFsM3U2MGh0NWNwOGV1eWJteHU2Z25wcjVxZ3B4aHh2NDFycyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YYW0hHizzIOrlhimPG/giphy.gif" />
 </p>
 
-\
-\
+  
+  
 Personal rewrite of the `printf` function in C language, as part of the Holberton School curriculum.
 
 ## 📘 Description
 
 This project is a custom implementation of the printf function in C, developed as part of the Holberton curriculum.\
-It supports multiple format specifiersand prints the formatted string to standard output, returning the number of characters printed.
+It supports multiple format specifiers and prints the formatted string to standard output, returning the number of characters printed.
 | Specifier | Description                              |
 |-----------|------------------------------------------|
 | `%c`      | Prints a single character                |
@@ -26,19 +26,22 @@ It supports multiple format specifiersand prints the formatted string to standar
 
 ## 🧭 Index
 
-1 - [⚙️ Cloning and Compilation](#-cloning)\
-2 - [📚 Files in Repository](#-files)\
+1 - [⚙️ Cloning and Compilation](#-cloning)  
+2 - [📚 Files in Repository](#-files)  
 3 - [📄 Man Page](#-man-page)\
 4 - [🗺️ Flowchart](#-flowchart)\
-5 - [🧪 Tests and outpour
-](#-tests)\
+5 - [🧪 Tests and outputs](#-tests)\
 6 - [📁 Project Structure](#-structure-du-projet)\
 7 - [👥 Authors](#-authors)\
-8 - [📜 Licence](#-licence)
+8 - [📜 License](#-license)
 
 
-## ⚙️ Cloning and Compilation <a id=-cloning></a>
+## ⚙️ Cloning and Compilation <a id="-cloning"></a>
+### Prerequisites
+GCC installed on your system.\
+Ubuntu 20.04 LTS (or equivalent).
 
+### Clone and execution
 | Task |Command|
 |--------------------------------------------|-------------------------------------------------------|
 | `Cloning` | `git clone https://github.com/Pendarium/holbertonschool-printf.git` |
@@ -53,9 +56,9 @@ It supports multiple format specifiersand prints the formatted string to standar
 |-----------------------|-------------------------------------------------------|
 | `main.h` | Header file containing function prototypes |
 | `_printf.c` | Main function that parses and prints |
-| `_putchar.c` | Contain the function to print |
+| `_putchar.c` | Contain the function to print characters |
 | `_strlen.c` | Contains the function to calculate the length |
-| `_print_numbers.c` | Contains the fonction to print numbers |
+| `_print_numbers.c` | Contains the function to print numbers |
 
 
 ## 📋 Man page <a id="-man-page"></a>
@@ -72,9 +75,9 @@ To view the manual in your terminal:
 ## 🗺️ Flowchart <a id="-flowchart"> </a>
 ![Flowchart of _printf logic](https://github.com/Pendarium/holbertonschool-printf/blob/main/printf-Flowchart.drawio.png)
 
-## 🧪 Tests and outpout <a id="-tests"></a>
+## 🧪 Tests and output <a id="-tests"></a>
 
-### 🖥 🖨 Outputs 
+### 💻 Outputs 
 ```c
 _printf("Hello %s\n", "World");
 ```
@@ -84,22 +87,26 @@ _printf("Number: %d\n", 42);
 ```
 Output : Number: 42
 ```c
-_printf("Char: %c\n", 'A';
+_printf("Char: %c\n", 'A');
 ```
 Output : Char: A
 ```c
 _printf("Percent: %%\n");
 ```
 Output : Percent: %
+```c
+_printf("Other formats : %o\n");
+```
+Output : Other formats : %o
 ## 📁 Project Structure <a id="-structure-du-projet"></a>
 
-├── _printf.c\
-├── _putchar.c\
-├── _puts.c\
-├── _strlen.c\
-├── main.c\
-├── main.h\
-├── man_3_printf\
+├── _printf.c  
+├── _putchar.c  
+├── _puts.c  
+├── _strlen.c  
+├── main.c  
+├── main.h  
+├── man_3_printf  
 └── README.md
 
 
@@ -110,6 +117,6 @@ This project was collaboratively developed by Holberton students as a peer progr
 **Thomas SORLI** https://github.com/Pendarium \
 **Cécile LAROCHE** https://github.com/CecileLAROCHE
 
-## 📜 License <a id="-licence"></a>
+## 📜 License <a id="-license"></a>
 
 This project is for educational purposes only as part of Holberton School.
