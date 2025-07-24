@@ -1,6 +1,12 @@
 # README of project Printf for Holberton's school
 
-<img alt="printfC" width="250" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWc3bmFsM3U2MGh0NWNwOGV1eWJteHU2Z25wcjVxZ3B4aHh2NDFycyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YYW0hHizzIOrlhimPG/giphy.gif" style="display: block; margin-left: auto; margin-right: auto;">
+![Project Status](https://img.shields.io/badge/status-development-yellow)
+![License: Edu](https://img.shields.io/badge/license-Educational-lightgrey)
+
+
+<p align="center">
+  <img alt="printfC" width="250" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWc3bmFsM3U2MGh0NWNwOGV1eWJteHU2Z25wcjVxZ3B4aHh2NDFycyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YYW0hHizzIOrlhimPG/giphy.gif" />
+</p>
 
 \
 \
@@ -23,8 +29,9 @@ It supports multiple format specifiersand prints the formatted string to standar
 1 - [⚙️ Cloning and Compilation](#-cloning)\
 2 - [📚 Files in Repository](#-files)\
 3 - [📄 Man Page](#-man-page)\
-4 - [ 🗺️ Flowchart](#-flowchart)\
-5 - [🧪 Tests](#-tests)\
+4 - [🗺️ Flowchart](#-flowchart)\
+5 - [🧪 Tests and outpour
+](#-tests)\
 6 - [📁 Project Structure](#-structure-du-projet)\
 7 - [👥 Authors](#-authors)\
 8 - [📜 Licence](#-licence)
@@ -32,18 +39,10 @@ It supports multiple format specifiersand prints the formatted string to standar
 
 ## ⚙️ Cloning and Compilation <a id=-cloning></a>
 
-| cloning |CMD|
-|-----------------------|-------------------------------------------------------|
+| Task |Command|
+|--------------------------------------------|-------------------------------------------------------|
 | `Cloning` | `git clone https://github.com/Pendarium/holbertonschool-printf.git` |
-
-
-
-| compilation |CMD|
-|-----------------------|-------------------------------------------------------|
 | `Compile with` | `gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c` |
-
-| Run |CMD|
-|-----------------------|-------------------------------------------------------|
 | `To run:` | `./a.out` |
 
 
@@ -73,9 +72,25 @@ To view the manual in your terminal:
 ## 🗺️ Flowchart <a id="-flowchart"> </a>
 ![Flowchart of _printf logic](https://github.com/Pendarium/holbertonschool-printf/blob/main/printf-Flowchart.drawio.png)
 
-## 🧪 Tests <a id="-tests"></a>
+## 🧪 Tests and outpout <a id="-tests"></a>
 
-
+### 🖥 🖨 Outputs 
+```c
+_printf("Hello %s\n", "World");
+```
+Output : Hello world!
+```c
+_printf("Number: %d\n", 42);
+```
+Output : Number: 42
+```c
+_printf("Char: %c\n", 'A';
+```
+Output : Char: A
+```c
+_printf("Percent: %%\n");
+```
+Output : Percent: %
 ## 📁 Project Structure <a id="-structure-du-projet"></a>
 
 ├── _printf.c\
