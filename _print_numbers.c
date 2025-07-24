@@ -1,11 +1,14 @@
 #include "main.h"
 
 /**
-* print_number - integer to be printed
-* @n: the numbers
-*
-* Return: The number printed
-*/
+ * print_number - Fonction qui affiche un nombre entier.
+ * @n: Le nombre à afficher.
+ *
+ * Description: Cette fonction utilise la récursivité pour afficher
+ * les chiffres d'un nombre entier, en gérant les nombres négatifs.
+ *
+ * Return: Le nombre de caractères affichés.
+ */
 int print_number(int n)
 {
 	unsigned int num;
