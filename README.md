@@ -18,7 +18,6 @@ It supports multiple format specifiersand prints the formatted string to standar
 | `%i`      | Same as `%d`, prints an integer          |
 | `%%`      | Prints a literal percent sign `%`        |
 
-
 ## ⚙️ Cloning and Compilation
 
 | cloning |CMD|
@@ -30,6 +29,10 @@ It supports multiple format specifiersand prints the formatted string to standar
 | compilation |CMD|
 |-----------------------|-------------------------------------------------------|
 | `Compile with` | `gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c` |
+
+| Run |CMD|
+|-----------------------|-------------------------------------------------------|
+| `To run:` | `./a.out` |
 
 
 
@@ -49,14 +52,40 @@ It supports multiple format specifiersand prints the formatted string to standar
 
 ## Man page
 
+A custom manual is provided in the file `man_3_printf`. It describes the usage, arguments, and return value of the `_printf` function.
+
+To view the manual in your terminal:
+
+| Run |CMD|
+|-----------------------|-------------------------------------------------------|
+| `To run:` | `man ./man_3_printf` |
+
 
 ## Flowchart
 ![Flowchart of _printf logic](https://github.com/Pendarium/holbertonschool-printf/blob/main/printf-Flowchart.drawio.png)
 
-## Utilisation et tests
+## 🧪 Tests
+
+
+## 📁 Project Structure
+
+├── _printf.c\
+├── _putchar.c\
+├── _puts.c\
+├── _strlen.c\
+├── main.c\
+├── main.h\
+├── man_3_printf\
+└── README.md
+
 
 
 ## ✍ Authors
-
+This project was collaboratively developed by Holberton students as a peer programming exercise.\
+\
 Thomas SORLI https://github.com/Pendarium \
 Cécile LAROCHE https://github.com/CecileLAROCHE
+
+## 📜 License
+
+This project is for educational purposes only as part of Holberton School.
