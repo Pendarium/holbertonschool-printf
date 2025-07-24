@@ -20,18 +20,18 @@ It supports multiple format specifiersand prints the formatted string to standar
 
 ## 🧭 Index
 
-1 - [⚙️ Cloning and Compilation](#-⚙️ Cloning and Compilation)
-- [⚙️ Compilation](#️-compilation)
-- [📚 Utilisation](#-utilisation)
-- [📄 Man Page](#-man-page)
-- [🔁 Flowchart](#-flowchart)
-- [📁 Structure du projet](#-structure-du-projet)
-- [✅ Tests](#-tests)
-- [👥 Auteurs](#-auteurs)
-- [📜 Licence](#-licence)
+1 - [⚙️ Cloning and Compilation](#Cloning)
+2 - [📚 Files in Repository](#files)
+3 - [📄 Man Page](#man-page)
+4 - [ 🗺️ Flowchart](#-flowchart)
+5 - [✅ Tests](#-tests)
+6 - [📁 Project Structure](#-structure-du-projet)
+
+7 - [👥 Authors](#authors)
+8 - [📜 Licence](#licence)
 
 
-## ⚙️ Cloning and Compilation <a id=Cloning and Compilation>
+## ⚙️ Cloning and Compilation <a id=Cloning></a>
 
 | cloning |CMD|
 |-----------------------|-------------------------------------------------------|
@@ -49,7 +49,7 @@ It supports multiple format specifiersand prints the formatted string to standar
 
 
 
-## 📚 Files in Repository
+## 📚 Files in Repository <a id="files"></a>
 
 | File | Description |
 |-----------------------|-------------------------------------------------------|
@@ -60,7 +60,7 @@ It supports multiple format specifiersand prints the formatted string to standar
 | `_print_numbers.c` | Contains the fonction to print numbers |
 
 
-## 📋 Man page
+## 📋 Man page <a id="man-page"></a>
 
 A custom manual is provided in the file `man_3_printf`. It describes the usage, arguments, and return value of the `_printf` function.
 
@@ -71,13 +71,13 @@ To view the manual in your terminal:
 | `To run:` | `man ./man_3_printf` |
 
 
-## Flowchart
+## 🗺️ Flowchart <a id=flowchart> </a>
 ![Flowchart of _printf logic](https://github.com/Pendarium/holbertonschool-printf/blob/main/printf-Flowchart.drawio.png)
 
-## 🧪 Tests
+## 🧪 Tests <a id="-tests"></a>
 
 
-## 📁 Project Structure
+## 📁 Project Structure <a id="-tests"><\a>
 
 ├── _printf.c\
 ├── _putchar.c\
@@ -90,12 +90,12 @@ To view the manual in your terminal:
 
 
 
-## ✍ Authors
+## 👥 Authors <a id="authors"><\a>
 This project was collaboratively developed by Holberton students as a peer programming exercise.\
 \
 **Thomas SORLI** https://github.com/Pendarium \
 **Cécile LAROCHE** https://github.com/CecileLAROCHE
 
-## 📜 License
+## 📜 License <a id="licence"><\a>
 
 This project is for educational purposes only as part of Holberton School.
