@@ -2,6 +2,8 @@
 
 <img alt="printfC" width="250" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWc3bmFsM3U2MGh0NWNwOGV1eWJteHU2Z25wcjVxZ3B4aHh2NDFycyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YYW0hHizzIOrlhimPG/giphy.gif" style="display: block; margin-left: auto; margin-right: auto;">
 
+\
+\
 Personal rewrite of the `printf` function in C language, as part of the Holberton School curriculum.
 
 ## 📘 Description
@@ -17,15 +19,19 @@ It supports multiple format specifiersand prints the formatted string to standar
 | `%%`      | Prints a literal percent sign `%`        |
 
 
-## Compilation
+## ⚙️ Cloning and Compilation
+
+| cloning |CMD|
+|-----------------------|-------------------------------------------------------|
+| `Cloning` | `git clone https://github.com/Pendarium/holbertonschool-printf.git` |
 
 
-Clone the repository:
-'bash git clone https://github.com/Pendarium/holbertonschool-printf.git
-cd holbertonschool-printf'
 
-`main.c  main.h  man_3_printf  _printf.c  _putchar.c  _puts.c  README.md  _strlen.c`\
- 
+| compilation |CMD|
+|-----------------------|-------------------------------------------------------|
+| `Compile with` | `gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c` |
+
+
 
 ## 📚 Files in Repository
 
@@ -33,20 +39,19 @@ cd holbertonschool-printf'
 |-----------------------|-------------------------------------------------------|
 | `main.h` | Header file containing function prototypes |
 | `_printf.c` | Main function that parses and prints |
-| `handle_char.c` | Support for the `%c` format |
-| `handle_string.c` | Support for the `%s` format |
-| `handle_integer.c` | Support for the `%d` and `%i` formats |
-| `utils.c` | Utility functions (conversion, length, etc.) |
+| `_putchar.c` | Contain the function to print |
+| `_strlen.c` | Contains the function to calculate the length |
+| `_print_numbers.c` | Contains the fonction to print numbers |
 
-## 📚 Prérequis et documentation
-### Requireùments
+
+## 📋 Requirements
 
 
 ## Man page
 
 
 ## Flowchart
-
+![Flowchart of _printf logic](https://github.com/Pendarium/holbertonschool-printf/blob/main/printf-Flowchart.drawio.png)
 
 ## Utilisation et tests
 
