@@ -81,23 +81,25 @@ To view the manual in your terminal:
 ```c
 _printf("Hello %s\n", "World");
 ```
-Output : Hello world!
+***Output : Hello world!***
 ```c
 _printf("Number: %d\n", 42);
 ```
-Output : Number: 42
+***Output : Number: 42***
 ```c
 _printf("Char: %c\n", 'A');
 ```
-Output : Char: A
+***Output : Char: A***
 ```c
 _printf("Percent: %%\n");
 ```
-Output : Percent: %
+***Output : Percent: %***
 ```c
 _printf("Other formats : %o\n");
 ```
-Output : Other formats : %o
+***Output : Other formats : %o***
+
+
 ## 📁 Project Structure <a id="-structure-du-projet"></a>
 
 ├── _printf.c  
