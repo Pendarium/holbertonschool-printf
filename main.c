@@ -3,9 +3,12 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * main - Fonction principale pour tester _printf.
  *
- * Return: Always 0
+ * Description: Cette fonction appelle _printf avec divers formats
+ * et arguments pour vérifier son comportement.
+ *
+ * Return: 0 en cas de succès.
  */
 
 int main(void)

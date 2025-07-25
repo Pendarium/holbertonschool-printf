@@ -1,12 +1,16 @@
 #include "main.h"
 
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
+ * _putchar - Fonction qui écrit un caractère sur la sortie standard.
+ * @c: Le caractère à écrire.
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Description: Cette fonction utilise la fonction write pour afficher
+ * un caractère sur la sortie standard (stdout).
+ *
+ * Return: Le nombre de caractères écrits (1 en cas de succès,
+ * -1 en cas d'erreur).
  */
+
 int _putchar(char c)
 {
 	return (write(1, &c, 1));
